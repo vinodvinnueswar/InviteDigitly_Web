@@ -293,19 +293,39 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
   justify-content: center;
 }
 .Our_Collections_List{
-  margin-top: 30px;
+  margin-top: 20px;
   display: grid;
+  align-items: center;
+  justify-content: center;
   padding: 30px;
   gap: 20px;
  grid-template-columns: repeat(4 ,1fr);
 
+}
+.Cards_List {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 320px;
+  object-fit: cover;
+  padding-bottom: 20px;
+  box-shadow: 2px 3px 4px 6px rgb(203, 199, 199);
 }
 .Cards_List img{
   height: 300px;
   width: 300px;
   object-fit: cover;
   padding-bottom: 20px;
-  box-shadow: 2px 3px 4px 6px rgba(200,197,197,1) 0%;
+}
+.Cards_List_items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+
 }
 .button{
   margin-top: -50px;
@@ -315,7 +335,7 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
   font-size: 20px;
   padding: 10px 30px;
   background: rgb(0,0,0);
-background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(0,65,152,1) 0%);
+  background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(0,65,152,1) 0%);
   color: white;
   border-radius: 5px ;
 }
