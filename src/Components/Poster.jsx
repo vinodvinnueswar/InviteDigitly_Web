@@ -1,6 +1,6 @@
 import React from 'react'
 import banner from '../images/banner/Invitation_Banner.png'
-import QRCode from '../images/QR_code/QR_code.jpg'
+import QRCode from '../images/QR_code/QR_Code.jpg'
 
 const Poster = () => {
   return (
