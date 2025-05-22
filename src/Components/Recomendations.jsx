@@ -1,9 +1,4 @@
 import React, { useEffect } from 'react'
-
-import wedCards from "../images/cards/wed_Cards.jpg"
-import wedCards1 from "../images/cards/wed_Cards1.jpg"
-import wedCards2 from "../images/cards/wed_Cards2.jpg"
-import wed from "../images/cards/wed.jpg"
 import { API_URL } from '../Pages/api'
 import { useState } from 'react';
 
