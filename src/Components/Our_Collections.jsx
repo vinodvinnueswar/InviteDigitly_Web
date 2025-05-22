@@ -1,17 +1,5 @@
 import React from 'react'
 import { Link, useNavigate, useParams } from "react-router-dom";
-import WedInvite1 from '../images/Our_Collections/Wed_card1.png'
-import WedInvite2 from '../images/Our_Collections/Wed_Card2.png'
-import WedInvite3 from '../images/Our_Collections/Wed_Card3.png'
-import WedInvite4 from '../images/Our_Collections/Wed_Card4.png'
-import BirthdayCard1 from '../images/Our_Collections/Birthday_Card2.png'
-import BirthdayCard2 from '../images/Our_Collections/Birthday_Card3.png'
-import BirthdayCard3 from '../images/Our_Collections/Birthday_Card4.png'
-import BirthdayCard4 from '../images/Our_Collections/Birthday_Card5.png'
-import HalfSaree1 from '../images/Our_Collections/Half_Saree.png'
-import HalfSaree2 from '../images/Our_Collections/Half_Saree1.png'
-import HalfSaree3 from '../images/Our_Collections/Half_Saree2.png'
-import HalfSaree4 from '../images/Our_Collections/Half_Saree3.png'
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { API_URL } from '../Pages/api';
@@ -21,10 +9,10 @@ import { API_URL } from '../Pages/api';
 
 const Our_Collections = () => {
 
-    const [vendorData, setVendorData] = useState([]);
-    const [products , setProducts] = useState([]);
-     const [activeCategory, setActiveCategory]= useState('all');
-     const navigate = useNavigate();
+    // const [vendorData, setVendorData] = useState([]);
+    // const [products , setProducts] = useState([]);
+    //  const [activeCategory, setActiveCategory]= useState('all');
+    //  const navigate = useNavigate();
      const [visibleCount, setVisibleCount] = useState(8);
      const [allProducts, setAllProducts] = useState([]);
 
@@ -63,9 +51,9 @@ const Our_Collections = () => {
             vendorDataHandler()
         }, [])
 
-        const filterHandler = (category) => {
-            setActiveCategory(category)
-          };       
+        // const filterHandler = (category) => {
+        //     setActiveCategory(category)
+        //   };       
 
           const handleViewMore = () => {
             setVisibleCount(prevCount => prevCount + 12);

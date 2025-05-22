@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import giftCard from '../images/cards/gift_Card.png'
+import giftCard from '../images/cards/gift_card.png'
 import BirthdayCard from '../images/cards/Birthday_card.png'
 import Function from '../images/cards/Function.png'
 import { API_URL } from '../Pages/api';
