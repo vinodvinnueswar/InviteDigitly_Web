@@ -1,4 +1,5 @@
 import React from 'react'
+import Whatsapp from '../images/social_share/Whatsapp.png'
 
 const Nav_Bar = () => {
   return (
@@ -8,12 +9,11 @@ const Nav_Bar = () => {
             <p>Online Invitation Website </p>
         </div>
         <div className="list">
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contacts</li>
-                <li>Events</li>
-            </ul>
+           <a href="https://web.telegram.org/a/#1251275106">
+           <p>Whatsapp</p>
+           <img src={Whatsapp} alt="" />
+           </a>
+
         </div>
     </div>
   )

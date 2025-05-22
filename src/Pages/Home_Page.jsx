@@ -13,7 +13,7 @@ const Home_Page = () => {
     <div className="Main_Container">
          <Nav_Bar/>
          <Desgin_Page/>
-         <Recomendations/>
+         {/* <Recomendations/> */}
          <Categories/>
          <Poster/>
          <Share_Products/>
