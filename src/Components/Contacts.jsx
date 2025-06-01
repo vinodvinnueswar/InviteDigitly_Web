@@ -16,15 +16,15 @@ const Contacts = () => {
         <div className="Contact-details">
           <h4>Contact</h4>
             <p>Phone : +91 9346999046</p>
-            <p>Email : vinodguttula@gmail.com</p>
+            <p>Email : invitedigitallyoffical@gmail.com</p>
         </div>
         <div className="Social-Media">
              <h4>Follow us</h4>
-          <a href="https://digitalinvitationonline.com/npyd4frxwx7c/">
+          <a href="https://www.facebook.com/profile.php?id=61576721319356">
           <img src={facebook} alt="" />
           </a>
            
-           <a href="https://invitation1-seven.vercel.app/">
+           <a href="https://www.instagram.com/invite.digitally_official">
            <img src={instagram} alt="" />
            </a>
             <img src={youtube} alt="" />
