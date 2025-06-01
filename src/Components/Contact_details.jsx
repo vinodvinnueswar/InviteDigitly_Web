@@ -9,7 +9,7 @@ import QRScanner from '../images/Contacts_logos/qr-code.png'
 const Contact_details = () => {
   return (
     <div className="contact_details_Container">
-        <h2>INTERGARTIONS</h2>
+        <h2>INTEGARTIONS</h2>
         <div className="contact_details_page">
             <div className="visuals">
                 <img src={visuals} alt="" /><br />
