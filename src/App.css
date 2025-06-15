@@ -623,7 +623,7 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
 
 
 /* Mobile responsiveness for screens 768px and below */
-@media screen  and (max-width: 768px) {
+@media (max-width:490px) and (max-width: 768px) {
 
   .Nav_Bar_Container {
 
@@ -682,6 +682,12 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
   .categories_Products {
     flex-direction: column;
     height: auto;
+    margin-top: 10px;
+  }
+  .categories_Products p{
+    margin-top: -120px;
+    margin-bottom: 10px;
+    font-size: 20px;
   }
 
   .Wed_Invitation img,
@@ -765,7 +771,7 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
 /* Even smaller screens: max-width 480px (phones) */
 @media screen and (max-width: 480px) {
   .Nav_Bar_Container {
-    height: 120px;
+    height: 100px;
     flex-direction: column;
     padding: 0px;
   }
@@ -778,10 +784,38 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
   .list ul li {
     font-size: 16px;
   }
+  .list{
+    margin-top: -10px;
+    width: 40%;
+  }
+  .list p{
+    padding: 4px;
+    font-size: 12px;
+    padding-left: 10px;
+  }
+  .list img{
+    height: 60px;
+  }
+
 
   .desgin_title h2 {
     font-size: 20px;
     text-align: center;
+  }
+
+  .desgin_Container{
+    height: 100vh;
+  }
+  .desgin_img {
+    margin-top: -60px;
+  }
+  .desgin_title h2{
+    font-size: 20px;
+  }
+
+  .categories_Products p{
+    margin-top: -150px;
+    font-size: 22px;
   }
 
   .Recomendations_title h3,
@@ -834,3 +868,29 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
 }
 
 
+
+@media screen and (orientation: landscape) {
+  body {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  .Main_Container,
+  .Nav_Bar_Container,
+  .desgin_Container,
+  .Our_Collections_Container {
+    display: none; /* or simplified fallback */
+  }
+
+  .landscape-warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #000;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 20px;
+  }
+}
