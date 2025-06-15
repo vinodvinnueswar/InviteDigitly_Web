@@ -111,7 +111,7 @@ const Our_Collections = () => {
                                     <Link className="Cards_List" to={item?.webUrl} key={index}>
                                        <img src={`${API_URL}/uploads/${item.image}`}  />
                                        <div className="Cards_List_items">
-                                       <div>{item.productName}</div>
+                                       <div >{item.productName}</div>
                                         <div>Price : ₹{item.price}/-</div>
                                         {/* <div>{item.description}</div> */}
                                        </div>
