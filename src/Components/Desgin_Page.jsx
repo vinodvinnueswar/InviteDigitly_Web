@@ -12,7 +12,7 @@ const Desgin_Page = () => {
           <img src={lpMB} alt="" />
         </div>
         <div className="desgin_title">
-            <h2>InviteDigitly to your Relative , Friends ,<br /> Family for your Favourite occasion </h2>
+            <h2>InviteDigitly to your Relative , Friends ,<br /> Family of your Favourite occasion </h2>
         </div>
         
       </div>

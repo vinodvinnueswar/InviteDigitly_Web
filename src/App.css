@@ -433,26 +433,36 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
 
 
 
-/* Mobile responsiveness for screens 768px and below */
-@media screen  and (max-width: 768px) {
+
+@media (min-width:768px)  and (max-width: 1024px) {
 
   .Nav_Bar_Container {
+    height: 150px;
     flex-direction: column;
-    padding: 10px;
+    padding: 0px;
+    font-size: 20px;
   }
 
   .Nav_Bar_title {
     padding-left: 0;
   }
+  .Nav_Bar_title h2{
+    margin-top: 10px;
+    font-size: 30px;
+  }
+  .Nav_Bar_title p{
+    font-size: 25px;
+  }
 
-  .list ul {
-    flex-direction: column;
+  .list p {
+    flex-direction: row;
     padding-right: 0;
-    gap: 15px;
+    gap: 20px;
+    font-size: 25px;
   }
 
   .list img {
-    height: 80px;
+    height: 100px;
     padding-right: 0px;
     margin-left:-40px;
   }
@@ -464,6 +474,189 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
   .desgin_img img {
     height: auto;
     width: 90vw;
+  }
+  
+
+  .Content {
+    flex-direction: column;
+    margin-top: 300px;
+    padding: 10px;
+  }
+  video{
+    margin-top: -80px;
+    height: 90vh;
+    width: 100%;
+    object-fit: cover;
+  
+  }
+
+  .Recomded_Products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .categories_Products {
+    flex-direction: column;
+    height: auto;
+    gap: 30px;
+  }
+  .categories_Products p{
+    margin-top: -200px;
+    font-size: 35px;
+    margin-bottom: 60px;
+  }
+
+  .Wed_Invitation img,
+  .Birthday_Parties img,
+  .Mature_Function img {
+    height: 20vh;
+    width: 60vw;
+    margin-bottom: 15px;
+  }
+
+  .Poster_Container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Poster_Content,
+  .Poster_Images img {
+    width: 100%;
+  }
+  .Poster_Content h2{
+    font-size: 30px;
+  }
+  .Poster_Content p{
+    font-size: 25px;
+  }
+
+  .Poster_Content img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .Shared_Container {
+    height: 50vh;
+    flex-direction: column;
+  }
+
+  .shared_title {
+    width: 90vw;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .whatsapp_image img {
+    height: 330px;
+    width: auto;
+  }
+
+  .Our_Collections_List {
+    grid-template-columns: 1fr;
+    padding: 10px;
+
+  }
+  .Our_Collections_title h2{
+    font-size: 30px;
+  }
+
+  .Cards_List {
+    width: 90vw;
+    height: auto;
+  }
+
+  .Cards_List img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Container details */
+  .contact_details_Container {
+    margin-top: 30px;
+    height: auto;
+    padding: 20px;
+  }
+  .contact_details_Container h2{
+    font-size: 30px;
+  }
+
+  .contact_details_page {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .contact_details_page img {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .contact_details_page h2 {
+    font-size: 25px;
+  }
+  .contact_details_page p{
+    font-size: 20px;
+  }
+
+
+  /* Contacts */
+  .Contact-details h4{
+    font-size: 30px;
+  }
+  .Contact-details p{
+    font-size: 20px;
+  }
+
+  /* Social Media */
+  .Social-Media h4{
+    font-size: 30px;
+  }
+ 
+}
+
+
+
+
+
+
+
+
+/* Mobile responsiveness for screens 768px and below */
+@media screen  and (max-width: 768px) {
+
+  .Nav_Bar_Container {
+
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .Nav_Bar_title {
+    padding-left: 0;
+  }
+
+  .list ul {
+    flex-direction: column;
+    padding-right: 0;
+    gap: 10px;
+  }
+
+  .list img {
+    height: 80px;
+    padding-right: 0px;
+    margin-left:-40px;
+  }
+
+  .desgin_Container {
+    flex-direction: column;
+  }
+   .desgin_title h2{
+    font-size: 20px;
+   }
+  .desgin_img img {
+    margin-top: -50px;
+    height: auto;
+    width: 80vw;
   }
   
 
@@ -568,8 +761,14 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
   }
 }
 
+
 /* Even smaller screens: max-width 480px (phones) */
 @media screen and (max-width: 480px) {
+  .Nav_Bar_Container {
+    height: 120px;
+    flex-direction: column;
+    padding: 0px;
+  }
 
   .Nav_Bar_title h2 {
     font-size: 20px;
@@ -633,3 +832,5 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
 .Contact-details {
   padding-left: 0;
 }
+
+
