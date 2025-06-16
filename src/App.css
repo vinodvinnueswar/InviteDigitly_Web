@@ -853,12 +853,19 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
   .categories_Products p{
     margin-top: -150px;
     font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  .Wed_Invitation p,
+  .Birthday_Parties p,
+  .Mature_Function p{
+    margin-top: -165px;
   }
 
   .Recomendations_title h3,
   .categories_Container h3,
   .Our_Collections_title h2 {
-    margin-bottom: 20px;
+
     font-size: 18px;
     text-align: center;
   }
