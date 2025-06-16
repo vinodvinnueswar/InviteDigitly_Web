@@ -211,7 +211,7 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
   
 }
 .Wed_Invitation img{
-  margin-top: 20px;
+  margin-top: -5px;
   height: 180px;
   width: 430px;
   border-radius: 20px;
@@ -220,9 +220,16 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
 .Wed_Invitation p{
   margin-top: -140px;
 }
+.Wed_Invitation :hover{
+  border: 2px solid grey;
+  background-color: aliceblue;
+}
+.Wed_Invitation .active {
+ border:  2px solid gold;
+}
 
 .Birthday_Parties img{
-  margin-top: 20px;
+  margin-top: -5px;
   height: 180px;
   width: 430px;
   border-radius: 20px;
@@ -232,8 +239,14 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
   margin-top: -140px;
 }
 
+.Birthday_Parties :hover{
+  border: 2px solid grey;
+  background-color: aliceblue;
+}
+
+
 .Mature_Function img{
-  margin-top: 20px;
+  margin-top: -5px;
   height: 180px;
   width: 430px;
   border-radius: 20px;
@@ -242,6 +255,22 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
 .Mature_Function p{
   margin-top: -140px;
 }
+.Mature_Function :hover{
+  border: 2px solid grey;
+  background-color: aliceblue;
+  
+}
+
+.Wed_Invitation.active,
+.Birthday_Parties.active,
+.Mature_Function.active {
+  border: 2px solid white;
+  box-shadow: 0px 0px 10px rgba(0,65,152,0.5);
+  transform: scale(1.05);
+  border-radius: 20px;
+}
+
+
 
 /* Poster Container */
 .Poster_Container {
@@ -563,6 +592,7 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
 
   }
   .Our_Collections_title h2{
+    margin-bottom: 20px;
     font-size: 30px;
   }
 
@@ -683,7 +713,9 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
     flex-direction: column;
     align-items: center;
   }
-
+  .Our_Collections_title h2{
+    margin-bottom: 20px;
+  }
   .categories_Products {
     flex-direction: column;
     height: auto;
@@ -700,7 +732,7 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
   .Mature_Function img {
     height: 20vh;
     width: 80vw;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
 
   .Poster_Container {
@@ -826,6 +858,7 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
   .Recomendations_title h3,
   .categories_Container h3,
   .Our_Collections_title h2 {
+    margin-bottom: 20px;
     font-size: 18px;
     text-align: center;
   }

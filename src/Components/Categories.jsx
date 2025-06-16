@@ -31,9 +31,9 @@ const Categories = () => {
               }, []);
 
               const filterHandler = (category) => {
-                setActiveCategory(category)
-              };       
-
+                setActiveCategory((prev) => (prev === category ? 'all' : category));
+              };
+              
 
 
   
@@ -46,18 +46,30 @@ return (
             {/* <h3>This is vendorId {vendorData}</h3> */}
         
         <div className="categories_Products">
-       <div className="Wed_Invitation" onClick={() => filterHandler('Wedding' , 'wedding')} >
-            <img src={giftCard} />
-           <p>Wedding Invitation</p>
-           </div>
-           <div className="Birthday_Parties" onClick={() => filterHandler('Birthday' , 'birthday')}>
-            <img src={BirthdayCard} />
-            <p>Birthday Parties</p>
-           </div>
-           <div className="Mature_Function" onClick={() => filterHandler('HalfSaree' , 'halfsaree')}>
-            <img src={Function}  />
-            <p>Half Saree Function</p>
-           </div>
+        <div
+          className={`Wed_Invitation ${activeCategory === 'Wedding' ? 'active' : ''}`}
+          onClick={() => filterHandler('Wedding')}
+        >
+           <img src={giftCard} />
+          <p>Wedding Invitation</p>
+        </div>
+        <div
+         className={`Birthday_Parties ${activeCategory === 'Birthday' ? 'active' : ''}`}
+          onClick={() => filterHandler('Birthday')}
+        >
+         <img src={BirthdayCard} />
+         <p>Birthday Parties</p>
+        </div>
+
+
+      <div
+      className={`Mature_Function ${activeCategory === 'HalfSaree' ? 'active' : ''}`}
+    onClick={() => filterHandler('HalfSaree')}
+      >
+        <img src={Function} />
+        <p>Half Saree Function</p>
+     </div>
+
     </div>
         <div className="Our_Collections_List">
 
@@ -69,7 +81,7 @@ return (
                         ) {
                             return(
                                 <>
-                                <Link className="Cards_List" to={item?.webUrl} key={index}>
+                                <Link className="Cards_List" to={item?.webUrl} key={index} >
                                 {/* <div className="Cards_List" key={index}> */}
                                    <img src={`${API_URL}/uploads/${item.image}`}  />
                                    <div className="Cards_List_items">
