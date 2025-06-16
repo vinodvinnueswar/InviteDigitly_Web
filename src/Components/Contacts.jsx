@@ -27,7 +27,9 @@ const Contacts = () => {
            <a href="https://www.instagram.com/invite.digitally_official">
            <img src={instagram} alt="" />
            </a>
+            <a href="https://wa.me/message/53QBGU52ZJQCE1">
             <img src={youtube} alt="" />
+            </a>
         </div>
         </div>
     </div>

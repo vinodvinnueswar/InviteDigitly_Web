@@ -9,7 +9,7 @@ const Nav_Bar = () => {
             <p>Online Invitation Website </p>
         </div>
         <div className="list">
-           <a href="https://web.telegram.org/a/#1251275106">
+           <a href="https://wa.me/message/53QBGU52ZJQCE1">
            <p>Whatsapp</p>
            <img src={Whatsapp} alt="" />
            </a>

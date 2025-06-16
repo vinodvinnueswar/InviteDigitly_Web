@@ -456,6 +456,9 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
     font-size: 25px;
   }
 
+  .list{
+    margin-top: -15px;
+  }
   .list p {
     flex-direction: row;
     padding-right: 0;
@@ -504,7 +507,7 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
     gap: 30px;
   }
   .categories_Products p{
-    margin-top: -200px;
+    margin-top: -180px;
     font-size: 35px;
     margin-bottom: 60px;
   }
@@ -871,7 +874,7 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
 
 
 
-@media screen and (orientation: landscape) {
+@media screen and (orientation: landscape) and (max-width:1300px){
   body {
     overflow: hidden;
     height: 100vh;
