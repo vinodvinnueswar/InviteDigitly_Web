@@ -919,6 +919,8 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
 
 
 
+
+
 @media screen and (orientation: landscape) and (max-width:1300px){
   body {
     overflow: hidden;
@@ -944,3 +946,14 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
     padding: 20px;
   }
 }
+
+
+
+@media screen and (orientation: portrait) {
+ 
+.landscape-warning{
+  display: none;
+}
+}
+  
+

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Desgin_Page from '../Components/Desgin_Page'
 import Nav_Bar from '../Components/Nav_Bar'
 import Recomendations from '../Components/Recomendations'
@@ -8,8 +8,11 @@ import Share_Products from '../Components/Share_Products'
 import Our_Collections from '../Components/Our_Collections'
 import Contacts from '../Components/Contacts'
 import Contact_details from '../Components/Contact_details'
+import Warning_Page from './Warning_Page'
 
 const Home_Page = () => {
+
+
   return (
     <div className="Main_Container">
          <Nav_Bar/>
@@ -20,7 +23,9 @@ const Home_Page = () => {
          <Share_Products/>
          <Our_Collections/>
          <Contact_details/>
-         <Contacts/>
+         <Contacts/> 
+         
+         
     </div>
   )
 }
