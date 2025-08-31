@@ -921,7 +921,7 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
 
 
 
-@media screen and (orientation: landscape) and (max-width:1300px){
+@media screen and (orientation: landscape) and (max-width:2000px){
   body {
     overflow: hidden;
     height: 100vh;
@@ -936,6 +936,7 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
 
   .landscape-warning {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -944,6 +945,11 @@ background: linear-gradient(148deg, rgba(0,0,0,1) 0%, rgba(242,235,235,1) 0%, rg
     font-size: 18px;
     text-align: center;
     padding: 20px;
+  }
+  .landscape-warning img{
+    height: 80px;
+    width: 80px;
+    margin-bottom: 20px;
   }
 }
 
